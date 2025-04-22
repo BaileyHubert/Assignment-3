@@ -1,0 +1,21 @@
+package main;
+
+public class AppointmentAndCalendar {
+//*creates date and time variables
+	private String date;
+	private String time;
+	//*getter and setter for requested date
+	public String getDate() {
+		return date;
+	}
+	public void setDate(String date) {
+		this.date = date;
+	}
+	//*getter and setter for requested time
+	public String getTime() {
+		return time;
+	}
+	public void setTime(String time) {
+		this.time = time;
+	}
+}

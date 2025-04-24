@@ -1,9 +1,16 @@
 package main;
 
 public class AppointmentAndCalendar {
-//*creates date and time variables
+	
+//*creates date, time, and savedAppointment variables
 	private String date;
 	private String time;
+	private String savedTime;
+	private String savedDate;
+	
+	//* imports saved appointments from text file
+	private String availability = savedAppointments.txt;
+	
 	//*getter and setter for requested date
 	public String getDate() {
 		return date;
@@ -17,5 +24,16 @@ public class AppointmentAndCalendar {
 	}
 	public void setTime(String time) {
 		this.time = time;
+	}
+	//* checking if requested appointment is available
+	public void String () {
+	if (time & date == availability) {
+		System.out.println("Your appointment has been saved!");
+		time = savedTime;
+		date = savedDate;
+	}
+	else {
+		System.out.println("This appointment is not available, please try again!");
+	}
 	}
 }

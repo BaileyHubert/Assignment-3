@@ -1,0 +1,33 @@
+package main;
+
+public class ServiceNeeded {
+	private String input;
+}
+	public static void main (String[] args) {
+System.out.println("Hello! What can I help you with today?");
+System.out.println("1. Create an appointment.");
+System.out.println("2. Pay a bill.");
+System.out.println("3. Follow up on a referral.")
+System.out.println("4. Talk to support.");
+System.out.println("Please enter a number.");
+//*getter and setter for requested service
+	public String getinput() {
+		return input;
+	}
+	public void setinput(String input) {
+		this.input = input;
+	}
+	//* detecting service and committing action
+	if (input = 1) {
+		send.user(AppointmentsAndCalendar);
+	}
+	if (input = 2) {
+		System.out.println("You can go to https://payyourbill.net to pay your bill.");
+	}
+	if (input = 3) {
+		send.user(Referrals);
+	}
+	if (input = 4) {
+		System.out.println("You can contact support at +1-800-555-555.");
+	}
+}

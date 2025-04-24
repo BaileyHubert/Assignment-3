@@ -28,12 +28,12 @@ public class AppointmentAndCalendar {
 	//* checking if requested appointment is available
 	public void String () {
 	if (time & date == availability) {
-		System.out.println("Your appointment has been saved!");
-		time = savedTime;
-		date = savedDate;
+		System.out.println("This appointment is not available, please try again!");
 	}
 	else {
-		System.out.println("This appointment is not available, please try again!");
+		System.out.println("Your appointment has been saved!");
+		savedTime = time;
+		savedDate = date;
 	}
 	}
 }
